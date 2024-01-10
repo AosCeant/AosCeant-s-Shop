@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AosCeant's Shop</title>
+</head>
+<body>
+
+    <header>
+        <h1>AosCeant's Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Ürünler</a></li>
+                <li><a href="#" onclick="openCart()">Sepetim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/07/05/423596/4fc979a6-cb80-4fca-b31b-46b72258bec3_size600x600_quality100.jpg" alt="Ürün 1">
+            <h3>Turuncu Bucket Şapka</h3>
+            <p>Fiyat: $50</p>
+            <button onclick="addToCart(1)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/11/08/500995/bf37a9ed-3a31-4e89-8e25-25a0d4fe9dd4_size600x600_quality100.jpg" alt="Ürün 2">
+            <h3>Unisex Mavi Bere</h3>
+            <p>Fiyat: $25</p>
+            <button onclick="addToCart(2)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/12/20/10149076/b54e9462-4b3d-41ba-aa93-cb851e1ce059_size600x600_quality100.jpg" alt="Ürün 3">
+            <h3>Renkli Unisex Şapka</h3>
+            <p>Fiyat: $40</p>
+            <button onclick="addToCart(3)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/10/18/10812922/c5673751-56dc-41cb-ad9c-bb9222d53694_size600x600_quality100.jpg" alt="Ürün 4">
+            <h3>Siyah Triangel Bucket</h3>
+            <p>Fiyat: $60</p>
+            <button onclick="addToCart(4)">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/08/15/5224063/27d36045-9798-4d18-bec4-e7a48c1f9828_size600x600_quality100.jpg" alt="Ürün 5">
+            <h3>Siyah Bucket Şapka</h3>
+            <p>Fiyat: $50</p>
+            <button onclick="addToCart(5)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2021/12/15/374732/0af15f84-67b0-4093-82f9-c79ff49ee609_size600x600_quality100.jpg" alt="Ürün 6">
+            <h3>Lacivert Şapka</h3>
+            <p>Fiyat: $25</p>
+            <button onclick="addToCart(6)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/12/13/608166/aeaf7137-bf37-41a6-92c1-d79ff58dfb0a_size600x600_quality100.jpg" alt="Ürün 7">
+            <h3>Mavi Bere</h3>
+            <p>Fiyat: $40</p>
+            <button onclick="addToCart(7)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/10/27/509083/5ff93e42-4a0c-439d-809c-253276207e0b_size600x600_quality100.jpg" alt="Ürün 8">
+            <h3>Tiger Libra Beyaz Bucket</h3>
+            <p>Fiyat: $60</p>
+            <button onclick="addToCart(8)">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/02/24/395525/b01e7643-fad2-4e52-b9f9-15917677591f_size600x600_quality100.jpg" alt="Ürün 9">
+            <h3>Vans Unisex Siyah Sneaker</h3>
+            <p>Fiyat: $150</p>
+            <button onclick="addToCart(9)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/11/09/12369968/73a0f358-4dfc-46d0-bc9c-0eedbf0c3e07_size600x600_quality100.jpg" alt="Ürün 10">
+            <h3>Puma Erkek Krem Spor Ayakkabı</h3>
+            <p>Fiyat: $125</p>
+            <button onclick="addToCart(10)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/10/18/9517017/0e01587d-1bc8-45bb-be90-e34914243380_size600x600_quality100.jpg" alt="Ürün 11">
+            <h3>Vans Kadın Haki Sneaker</h3>
+            <p>Fiyat: $140</p>
+            <button onclick="addToCart(11)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/10/26/15170952/56800ab5-b5ac-439b-8275-5ccc8fa82bd9_size600x600_quality100.jpg" alt="Ürün 12">
+            <h3>Nike Club Mavi Eşofman Altı</h3>
+            <p>Fiyat: $80</p>
+            <button onclick="addToCart(12)">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2023/10/23/12368967/cb6ada42-6e8c-47f0-9f93-e9e6a3b0933b_size600x600_quality100.jpg" alt="Ürün 13">
+            <h3>Siyah Bucket Şapka</h3>
+            <p>Fiyat: $50</p>
+            <button onclick="addToCart(13)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2021/12/15/374732/0af15f84-67b0-4093-82f9-c79ff49ee609_size600x600_quality100.jpg" alt="Ürün 14">
+            <h3>Puma Downtown Erkek Siyah Ceket</h3>
+            <p>Fiyat: $125</p>
+            <button onclick="addToCart(14)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/06/28/420167/0475522c-b053-414e-8e18-4cb91ab2e18b_size600x600_quality100.jpg" alt="Ürün 15">
+            <h3>Nike Sportswear Kadın Beyaz Şort</h3>
+            <p>Fiyat: $60</p>
+            <button onclick="addToCart(15)">Sepete Ekle</button>
+        </div>
+    
+        <div class="product">
+            <img src="https://akn-ss.a-cdn.akinoncloud.com/products/2022/07/19/425076/a985f8bd-3dc8-4b30-9833-8ccdd73473e5_size600x600_quality100.jpg" alt="Ürün 16">
+            <h3>Nautica Regular Fit Kadın Mor Şort</h3>
+            <p>Fiyat: $70</p>
+            <button onclick="addToCart(16)">Sepete Ekle</button>
+        </div>
+    </section>
+    
+
+    <section id="cart" style="display: none;">
+        <h2>Sepetim</h2>
+        <ul id="cart-items">
+                
+        </ul>
+        <div id="cart-total">
+            <p>Ara Toplam: $<span id="cart-subtotal">0.00</span></p>
+        </div>
+        <button onclick="closeCart()">Sepeti Kapat</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
